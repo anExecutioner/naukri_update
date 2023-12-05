@@ -20,7 +20,7 @@ class naukri_update():
         profile = driver.find_element_by_xpath("//a[@href='/mnjuser/profile']")
         driver.execute_script("arguments[0].click();",profile)
         edit = "//div[@class='widgetHead']//span[text()='Resume headline']/following-sibling::span"
-        driver.find_element_by_xpath(edit).click()
+        driver.execute_script("arguments[0].click();",edit)
         txt = driver.find_element_by_id("resumeHeadlineTxt")
         assert naukri_update.pre_text == txt.text, "Fail"
         txt.clear()
