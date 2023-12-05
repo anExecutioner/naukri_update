@@ -2,7 +2,7 @@ from selenium import webdriver
 import time
 
 class naukri_update():
-    pre_text = 'Python Automation Engineer with B.Tech/B.E. in Computers currently living in Mumbai'
+    pre_text = 'Experienced Python Automation Engineer with B.Tech in Computer Engineering currently living in Mumbai'
 
     def __init__(self,username,password):
         self.username = username
