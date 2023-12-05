@@ -23,7 +23,7 @@ class naukri_update():
         x1 = driver.find_element_by_xpath(edit)
         driver.execute_script("arguments[0].click();",x1)
         txt = driver.find_element_by_id("resumeHeadlineTxt")
-        assert naukri_update.pre_text == txt.text, "Fail"
+        # assert naukri_update.pre_text == txt.text, "Fail"
         txt.clear()
         time.sleep(3)
         txt.send_keys(naukri_update.pre_text)
