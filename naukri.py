@@ -44,8 +44,8 @@ class naukri_update():
         driver.quit()
 
 if __name__ == '__main__':
-    username= "pankajgle7@gmail.com"
-    password = 'Pankaj.soni@321'
+    username= "username"
+    password = "password"
     naukri = naukri_update(username,password)
     naukri.launch_browser()
     naukri.login()
